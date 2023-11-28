@@ -1,0 +1,251 @@
+:root {
+  /* --swiper-navigation-size: 20px; */
+  --swiper-theme-color: black;
+}
+body{
+  overflow-x: hidden;
+  margin: 0 !important;
+}
+.preloader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999999;
+  background: url('../assets/loader.gif') center no-repeat #ffffff;
+}
+.schoolLogo{
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.react-tabs {
+    -webkit-tap-highlight-color: transparent;
+    width: 100vw;
+    
+}
+.cardImage{
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+@media screen and (max-width:768px) {
+  .cardImage{
+    height: 240px;
+  }
+  .schoolLogo{
+    height: 90px;
+    width: 90px;
+  }
+}
+
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  list-style: none;
+}
+.page-link {
+  display: flex;
+  color: #207681;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-right: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #fff;
+  min-width: 30px;
+  min-height: 30px;
+  border: 1px solid #dee2e6;
+  
+}
+.activeLink{
+  background-color: #207681;
+  color: white;
+  font-weight: bolder;
+}
+  
+.react-tabs__tab-list {
+    width:60vw;
+    justify-content: center;
+    margin: 2rem auto 0;
+    text-align: center;
+    
+}
+  
+.react-tabs__tab {
+    display: inline-block;
+    margin-right: 3rem;
+    position: relative;
+    list-style: none;
+    cursor: pointer;
+    color: #858484;
+    font-weight: 600;
+
+}
+  
+  .react-tabs__tab--selected {
+    /* color: black; */
+    border-bottom: 7px solid #089CA6;
+    padding-bottom: 1rem;
+    border-radius: 10%;
+    color: black;
+    outline: none;
+  }
+
+  .react-tabs__tab--selected:focus > li{
+    color: black;
+    font-weight: 600;
+  }  
+
+  .react-tabs__tab:focus {
+    border-bottom: 7px solid #089CA6;
+    padding-bottom: 1rem;
+    border-radius: 10%;
+    outline: none;
+
+  }
+  
+  .react-tabs__tab:focus:after {
+    /* content: ''; */
+    position: absolute;
+    border-bottom: 5px solid #089CA6;
+    padding-bottom: 1rem;
+    border-radius: 10%;
+    outline: none;
+
+  }
+  
+  .react-tabs__tab-panel {
+    display: none;
+  }
+  
+  .react-tabs__tab-panel--selected {
+    display: block;
+  }
+
+  .swiper {
+    width: 95%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    background: #fff;
+    width: 100%;
+  
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+
+  .swiper-slide div {
+    display: grid;
+    grid-template-rows: auto auto;
+    padding: 0 1rem;
+  }
+  
+  .swiper-slide > div > img {
+    display: block;
+    width: 100%;
+    height: 11rem;
+    /* object-fit: cover; */
+  }
+
+  .swiper-slide > div > section {
+    display: flex;
+    justify-content: space-around;
+    /* margin: 1rem -2rem; */
+    /* display: grid;
+    grid-template-columns: auto auto; */
+}  
+.swiper-slide > div  > h4{
+  color: #5F5F5F;
+}
+
+
+@media screen and (min-width: 280px) {
+  .swiper-container {
+    width: 640px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .swiper-container {
+    width: 900px;
+  }
+}
+
+.swiper-slide > div > section > div  > h5{
+  margin-top: -1rem;
+  color: #B3B3B3;
+  font-size: 1rem;
+}
+
+.swiper-slide > div > section > div > button {
+    background-color: #2B949C;
+    border: none;
+    border-radius: 40px;
+    color: white;
+    font-weight: 700;
+    margin-top: 1.7rem;
+    margin-left: 3rem;
+    height: 1.7rem;
+    width: 4rem;
+}
+.swiper-button-next::after, .swiper-button-prev::after{
+      font-size:20px!important ;
+      color: black;
+      font-weight: 700;
+      padding: 1rem 1.5rem;
+      border-radius: 50%;
+}
+
+@media (max-width:1300px){
+    .react-tabs__tab-list {
+        width:80vw;
+    }
+}
+
+@media (max-width: 1000px){
+    .react-tabs__tab-list{
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .react-tabs__tab-list::-webkit-scrollbar{
+        display: none;
+    }
+
+    .react-tabs__tab{
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 600px){
+
+    .react-tabs__tab{
+        font-size: 1rem;
+    }
+
+    .react-tabs__tab--selected, .react-tabs__tab:focus, .react-tabs__tab:focus:after{
+      border-bottom: 5px solid #089CA6;
+    }
+  
+
+}
