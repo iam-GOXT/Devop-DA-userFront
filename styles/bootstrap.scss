@@ -1,0 +1,17 @@
+$primary: #0d3959;
+
+// Import the functions & variables
+@import "/node_modules//bootstrap/scss/functions";
+@import "/node_modules//bootstrap/scss/variables";
+
+$custom-theme-colors: (
+  "primaryOrange": #ffa500,
+  "primaryOrange2": #faa41a,
+  "primaryOrange3": #ffa500,
+  "primaryLightGray": #ededed
+);
+
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
+// import bootstrap to set changes
+@import "/node_modules/bootstrap/scss/bootstrap.scss";

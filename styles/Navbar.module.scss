@@ -1,0 +1,122 @@
+.navbar {
+  justify-content: end;
+  align-items: end;
+  height: 117px;
+  background: #ffffff;
+  padding: 35.75px 107.25px;
+
+  @media screen and (max-width: 1199px) {
+    padding: 35.75px 22.81px 35.75px 22.88px;
+  }
+
+  @media screen and (max-width: 767px) {
+    height: 62px;
+    padding: 17.16px 22.81px 17.16px 22.88px;
+  }
+
+  .mainLogo {
+    width: 156px;
+    height: 39px;
+
+    // @media screen and (max-width: 1199px) {
+    //   width: 104px;
+    //   height: 26px;
+    // }
+    @media screen and (max-width: 767px) {
+      width: 96px;
+      height: 24px;
+    }
+    @media screen and (max-width: 369px) {
+      width: 86px;
+      height: 22px;
+    }
+  }
+
+  .logoStroke {
+    height: 44px;
+
+    // @media screen and (max-width: 1199px) {
+    //   height: 30px;
+    // }
+    @media screen and (max-width: 767px) {
+      height: 25px;
+    }
+  }
+
+  .logoText {
+    color: var(--Orange, #ffa500);
+    font-family: DM Sans;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    @media screen and (max-width: 767px) {
+      font-size: 12px;
+    }
+
+    @media screen and (max-width: 369px) {
+      font-size: 11px;
+    }
+  }
+
+  .menu {
+    height: 31px;
+
+    @media screen and (max-width: 767px) {
+      height: auto;
+    }
+
+    .menuBar {
+      margin-left: auto;
+
+      // @media screen and (max-width: 1199px) {
+      // justify-content: center;
+      // align-items: center;
+      // }
+
+      @media screen and (max-width: 767px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+        width: 330px;
+        background-color: #ffffff;
+        padding: 27px 31px;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 20px;
+        box-shadow: 0px 4px 22px 12px rgba(0, 0, 0, 0.04);
+      }
+
+      .navLink {
+        color: var(--Blue, #24378a);
+        font-family: DM Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        padding-inline-end: 20px;
+        text-align: center;
+
+        @media screen and (max-width: 1199px) {
+          font-size: 13px;
+          padding-inline-end: 15px;
+        }
+
+        @media screen and (max-width: 991px) {
+          padding-inline-end: 5px;
+        }
+
+        @media screen and (max-width: 767px) {
+          color: var(--Black, #1c1c1c) !important;
+          font-family: "Quicksand", sans-serif;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+      }
+    }
+  }
+}

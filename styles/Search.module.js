@@ -122,7 +122,8 @@ export const InputField = styled.div`
   div {
     button {
       border: 1px solid #79c9de;
-      background-color: #79c9de;
+      color: #ffffff;
+      background-color: #06a9b6;
       padding: 1rem 2rem;
       margin-top: 1rem;
       border-radius: 10px;
