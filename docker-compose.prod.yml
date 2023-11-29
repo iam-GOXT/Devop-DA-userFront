@@ -1,0 +1,10 @@
+version: "3.8"
+services: 
+  da-user-frontend:
+    container_name: da-user-frontend
+    build: .
+    restart: always #change if you don't want the container restarting
+    environment:
+      - NODE_ENV=production
+    ports:
+      - 3000:3000
