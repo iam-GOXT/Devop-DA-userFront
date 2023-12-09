@@ -1,6 +1,6 @@
 version: "3.8"
 services: 
-  frontend:
+  dev-user-frontend:
     container_name: da-user-frontend
     build:
       context: .
